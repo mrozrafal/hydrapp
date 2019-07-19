@@ -22,12 +22,12 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 150px 114px 98px 68px 48px 50px 38px 22px 174px;
+  grid-template-rows: 100px 114px 98px 68px 48px 50px 38px 22px 174px;
   &__header {
     grid-row-start: 1;
     display: flex;
     justify-content: center;
-    margin-top: 64px;
+    margin-top: 32px;
     font-size: 48px;
     color: #f5e5e7;
   }
