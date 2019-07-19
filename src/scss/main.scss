@@ -45,6 +45,7 @@ body {
     justify-content: center;
     grid-row-start: 2;
     grid-row-end: 5;
+    
   }
   &__counter {
     font-size: 112px;
@@ -62,7 +63,7 @@ body {
 }
 .button {
   grid-row-start: 6;
-  // grid-row-end: 9;
+ 
 
   &__plus {
     position: absolute;
