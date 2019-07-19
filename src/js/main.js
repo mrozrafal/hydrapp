@@ -16,13 +16,19 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 const key = new Date () .toISOString() .slice (0, 10);
+const counter = document.querySelector('.water__counter--js');
 
-const count = document.querySelector('.water__counter--js');
-// const plus = document.querySelector('.button__plus--js');
-// const minus = document.querySelector('.button__minus--js');
-const countString = {
- count= JSON.stringify(count)
+const count = counter.innerHTML;
+if (localStorage.getItem(key,count)){
+  console.log(count);
+  counter.innerHTML = localStorage.getItem(key,count);
+localStorage.setItem(key, count);
+}else{
+  
+  localStorage.setItem(key, 0);
+  counter.innerHTML = 0;
+  
 }
-const glasses = count.innerHTML;
-console.log(glasses);
+console.log(count);
+
 
