@@ -15,8 +15,14 @@ if ('serviceWorker' in navigator) {
 }
 
 // place your code below
+const key = new Date () .toISOString() .slice (0, 10);
 
-
-console.log(`Hello world!`);
-
+const count = document.querySelector('.water__counter--js');
+// const plus = document.querySelector('.button__plus--js');
+// const minus = document.querySelector('.button__minus--js');
+const countString = {
+ count= JSON.stringify(count)
+}
+const glasses = count.innerHTML;
+console.log(glasses);
 
