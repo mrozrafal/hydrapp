@@ -20,15 +20,17 @@ body {
 .application {
   position: relative;
   min-height: 100vh;
+  justify-content: center;
+  align-items: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 114px 98px 68px 48px 50px 38px 22px ;
+  grid-template-rows: 25vh 114px 98px 68px 48px 50px 38px 22px ;
   &__header {
     grid-row-start: 1;
     display: flex;
     justify-content: center;
-    margin-top: 32px;
-    font-size: 48px;
+    margin-top: 28px;
+    font-size: 40px;
     color: #f5e5e7;
   }
 }
