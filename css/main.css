@@ -331,8 +331,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -ms-grid-rows: 150px 114px 98px 68px 48px 50px 38px 22px 174px;
-  grid-template-rows: 150px 114px 98px 68px 48px 50px 38px 22px 174px; }
+  -ms-grid-rows: 100px 114px 98px 68px 48px 50px 38px 22px 174px;
+  grid-template-rows: 100px 114px 98px 68px 48px 50px 38px 22px 174px; }
   .application__header {
     -ms-grid-row: 1;
         grid-row-start: 1;
@@ -342,7 +342,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 64px;
+    margin-top: 32px;
     font-size: 48px;
     color: #f5e5e7; }
 
