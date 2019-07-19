@@ -18,75 +18,92 @@ body {
   font-weight: 500;
 }
 .application {
+  position: relative;
   min-height: 812px;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 480px 330px;
-  &__header{
+  grid-template-rows: 202px 114px 98px 68px 48px 50px 38px 22px 174px;
+  &__header {
+    grid-row-start: 1;
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 64px;
     font-size: 48px;
     color: #f5e5e7;
   }
 }
 .water {
-  &__counter {
-    font-size: 112px;
-    color: #000000;
-    z-index: 2;
-    position: absolute;
-    top:50%;
-    left:50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    grid-row-start: 1;
-  }
   &__glass {
     width: 280px;
     height: 280px;
     z-index: 1;
     position: absolute;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    grid-row-start: 1;
-
+    justify-content: center;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+  &__counter {
+    font-size: 112px;
+    color: #000000;
+    z-index: 2;
+    justify-content: center;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
   }
 }
 .button {
-  bottom: 100px;
-  &__minus {
-    width: 184px;
-    height: 24px;
-    font-size: 14px;
-    line-height: 16px;
-    color: #f5e5e7;
-    position: absolute;
-    top:50%;
-    left:50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    background: inherit;
-    border: none;
-    grid-row-start: 3;
+  grid-row-start: 6;
+  // grid-row-end: 9;
 
-  }
   &__plus {
     position: absolute;
 
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
     background: #ffffff;
     border-radius: 4px;
+    border: none;
     width: 216px;
     height: 48px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 18px;
-    line-height: 20px;
+    display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
     color: #000000;
-    grid-row-start: 2;
-
+    grid-row-start: 6;
+  }
+  &__minus {
+    
+    
+    position: absolute;
+   
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 86px;
+    transform: translate(-50%, -50%);
+    background: inherit;
+    border: none;
+    width: 184px;
+    height: 24px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #f5e5e7;
+    grid-row-start: 8;
+    
   }
 }
