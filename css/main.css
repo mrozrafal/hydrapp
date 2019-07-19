@@ -327,12 +327,18 @@ body {
 .application {
   position: relative;
   min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -ms-grid-rows: 100px 114px 98px 68px 48px 50px 38px 22px;
-  grid-template-rows: 100px 114px 98px 68px 48px 50px 38px 22px; }
+  -ms-grid-rows: 25vh 114px 98px 68px 48px 50px 38px 22px;
+  grid-template-rows: 25vh 114px 98px 68px 48px 50px 38px 22px; }
   .application__header {
     -ms-grid-row: 1;
         grid-row-start: 1;
@@ -342,8 +348,8 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 32px;
-    font-size: 48px;
+    margin-top: 28px;
+    font-size: 40px;
     color: #f5e5e7; }
 
 .water__glass {
