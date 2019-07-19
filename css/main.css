@@ -331,8 +331,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -ms-grid-rows: 100px 114px 98px 68px 48px 50px 38px 22px 174px;
-  grid-template-rows: 100px 114px 98px 68px 48px 50px 38px 22px 174px; }
+  -ms-grid-rows: 100px 114px 98px 68px 48px 50px 38px 22px;
+  grid-template-rows: 100px 114px 98px 68px 48px 50px 38px 22px; }
   .application__header {
     -ms-grid-row: 1;
         grid-row-start: 1;
