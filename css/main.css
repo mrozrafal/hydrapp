@@ -326,13 +326,13 @@ body {
 
 .application {
   position: relative;
-  min-height: 812px;
+  min-height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -ms-grid-rows: 202px 114px 98px 68px 48px 50px 38px 22px 174px;
-  grid-template-rows: 202px 114px 98px 68px 48px 50px 38px 22px 174px; }
+  -ms-grid-rows: 150px 114px 98px 68px 48px 50px 38px 22px 174px;
+  grid-template-rows: 150px 114px 98px 68px 48px 50px 38px 22px 174px; }
   .application__header {
     -ms-grid-row: 1;
         grid-row-start: 1;
