@@ -15,7 +15,9 @@ if ('serviceWorker' in navigator) {
 }
 
 // place your code below
-const key = new Date().toISOString().slice(0, 10);
+
+const key = new Date().toISOString().slice(0, 10); // date function;
+
 const counter = document.querySelector('.water__counter--js');
 
 var count = counter.innerHTML;
@@ -23,7 +25,7 @@ counter.addEventListener('change', (e) => {
 
 })
 var checker = localStorage.getItem(key,count);
-console.log(checker);
+// console.log(checker);
 
 
 if (checker>0){
@@ -50,5 +52,45 @@ minus.addEventListener('click', (e) => {
   }
 })
 }
+
+
+
+
+
+/////////////////HISTORY///////////////////////////////
+var historyKey;
+const tab = [] ;
+var i=0;
+tab[0]=[key,count];
+var d = new Date();
+
+
+while(((localStorage.length)-1)>i){
+  d.setDate(d.getDate()-i);
+historyKey=((d.toISOString().slice(0,10)));
+var jss =(localStorage.getItem(historyKey,count.value));
+console.log(historyKey+ " wypito: " + jss );
+
+
+  tab [i] = localStorage.getItem(d,count);
+  i++;
+}
+
+
+//////////////////history button///////////////////
+const history = document.querySelector('.button__history--js');
+history.addEventListener('click', (e)=>{
+  e.preventDefault();
+
+} )
+
+
+
+
+
+
+
+
+
 
 
