@@ -1,9 +1,7 @@
-# wtf-gulp-starter
+![Hydrapp](src/assets/img/presentation.png)
 
-`npm install -g gulp-cli`
+#Hydrap
 
-`npm install`
-
-`gulp`
-
-To publish your page using github pages use `npm run deploy`
+Simple **PWA** application with local storage feature. 
+Add your glasses of water and fill good 
+in hot weather 😉
