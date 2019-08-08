@@ -1,6 +1,6 @@
 ![Hydrapp](src/assets/img/presentation.png)
 
-#Hydrap
+# Hydrap
 
 Simple **PWA** application with local storage feature. 
 Add your glasses of water and fill good 
