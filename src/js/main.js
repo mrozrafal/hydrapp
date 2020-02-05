@@ -65,7 +65,7 @@ tab[0]=[key,count];
 var d = new Date();
 
 
-while(((localStorage.length)-1)>i){
+while(((localStorage.length))>i){
   d.setDate(d.getDate()-i);
 historyKey=((d.toISOString().slice(0,10)));
 var jss =(localStorage.getItem(historyKey,count.value));
@@ -82,7 +82,7 @@ const table = document.querySelector('.table--js');
 const history = document.querySelector('.button__history--js');
 history.addEventListener('click', (e)=>{
   e.preventDefault();
-  table.classList.toggle('table__visable');
+
 
 } )
 
