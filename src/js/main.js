@@ -78,9 +78,11 @@ console.log(historyKey+ " wypito: " + jss );
 
 
 //////////////////history button///////////////////
+const table = document.querySelector('.table--js');
 const history = document.querySelector('.button__history--js');
 history.addEventListener('click', (e)=>{
   e.preventDefault();
+  table.classList.toggle('table__visable');
 
 } )
 
